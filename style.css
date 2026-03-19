@@ -29,6 +29,7 @@ body {
   transition:
     background 0.4s,
     color 0.4s;
+  overflow-x: hidden;
 }
 
 nav {
