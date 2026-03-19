@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MilaCare Babysitting</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--MASCOT-->
+  <div class="mascot">
+  🧸
+</div>
+
+<!--SPARKLES-->
+<div class="sparkles"></div>
+
+    <!-- HEADER COM MENU E LOGO -->
+    <header id="home">
+      <!-- MENU HAMBÚRGUER -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- MENU DE IDIOMAS -->
+      <div class="language-menu">
+        <button class="langBtn" data-lang="pt">PT</button>
+        <button class="langBtn" data-lang="en">EN</button>
+        <button class="langBtn" data-lang="no">NO</button>
+        <button class="langBtn" data-lang="es">ES</button>
+        <button class="langBtn" data-lang="fr">FR</button>
+      </div>
+    </header>
+
+    <!-- MENU LATERAL (ABRE E FECHA) -->
+<div id="sideMenu" class="side-menu">
+  <span class="closeMenu" onclick="toggleMenu()">✖</span>
+
+  <a href="#home" class="menu-link">🏡Home</a>
+<a href="#about" class="menu-link">About Me</a>
+<a href="#price" class="menu-link">Price</a>
+<a href="#tips-parents" class="menu-link">Tips for Parents</a>
+<a href="#services" class="menu-link">Services</a>
+<a href="#schedule" class="menu-link">🗓️Schedule</a>
+<a href="contact-section" class="menu-link">📞Contact</a>
+<a href="#brand-values" class="menu-link">🧡 Brand Values</a>
+<a href="#brand-story" class="menu-link">🎀 Brand Story</a>
+
+</div>
+
+    <!-- CONTROLES DE TEMA -->
+    <div class="theme-controls">
+      <button id="darkBtn">Dark Mode</button>
+      <button id="themeBtn">Auto Theme</button>
+    </div>
+
+<!--HOME-->
+    <header id="home">
+      <img src="logo.png" class="logo" alt="Logo" />
+      <h1 data-i18n="title">Mila Care</h1>
+      <p data-i18n="subtitle">Care, safety and love for your little one</p>
+    </header>
+
+    <!--PROFILE-->
+    <div class="container">
+      <div class="perfil">
+        <img src="pic.jpg" alt="Profile" />
+      </div>
+
+      <!--ABOUT ME-->
+      <section id="about">
+      <h2 data-i18n="about_title">About Me</h2>
+      <p data-i18n="about_text">
+        Hi, my name is Ludmila, known as Mila, I'm 19 years old, and I came from Brazil to Norway 5 years ago. I really like children and babies, I think they're very cute, and I already have experience taking care of my neighbor's 3-year-old baby. 
+        I am patient,
+        responsible and caring.
+      </p>
+      </section>
+
+      <!--PRICE-->
+      <!-- SEÇÃO: Tabela de Preços -->
+      <div class="price-table">
+        <section id="price">
+        <h2 class="price-title">Price Table</h2>
+        <p class="price-subtitle">
+          Escolha o pacote que melhor combina com sua necessidade
+        </p>
+
+        <div class="price-cards">
+          <!-- PACOTE POR HORA -->
+          <div class="price-card">
+            <h3>Per hour</h3>
+            <p class="price-value">150–200 NOK / hour</p>
+            <ul>
+              <li>Ideal for quick services</li>
+              <li>Flexible and practical</li>
+              <li>No monthly commitment</li>
+            </ul>
+          </div>
+
+          <!-- PACOTE POR PERÍODO -->
+          <div class="price-card">
+            <h3>Per Period</h3>
+            <p class="price-value">400–600 NOK / period</p>
+            <ul>
+              <li>Manhã, tarde ou noite</li>
+              <li>Até 4 horas</li>
+              <li>Perfeito para compromissos curtos</li>
+            </ul>
+          </div>
+
+          <!-- PACOTE MENSAL -->
+          <div class="price-card">
+            <h3>Monthly</h3>
+            <p class="price-value">Starting from 3.000 NOK</p>
+            <ul>
+              <li>Pacote fixo do mês</li>
+              <li>Horários combinados</li>
+              <li>Melhor custo-benefício</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</section>
+<br>
+      <!-- SEÇÃO: Idiomas que eu falo -->
+      <div class="speak-languages">
+        <section id="language">
+        <h2 class="speak-title">Languages ​​I can speak</h2>
+        <p class="speak-subtitle">
+          Posso me comunicar com famílias em vários idiomas:
+        </p>
+
+        <div class="speak-tags">
+          <div class="speak-tag pt">🇧🇷 Portuguese</div>
+          <div class="speak-tag en">🇺🇸 English</div>
+          <div class="speak-tag no">🇳🇴 Norwegian</div>
+          <div class="speak-tag es">🇪🇸 Spanish</div>
+        </div>
+      </div>
+      </section>
+      <br />
+
+<!-- SEÇÃO: Valores da sua marca -->
+<section id="brand-values" class="magic-section">
+  <h2 class="magic-title">🧡 Brand Values</h2>
+
+  <div class="magic-container">
+
+    <div class="magic-card">
+      <h3>💛 Affection</h3>
+      <p>Trato cada criança com afeto, acolhimento e atenção verdadeira.</p>
+    </div>
+
+    <div class="magic-card">
+      <h3>🛡️ Safety</h3>
+      <p>Ambiente seguro, cuidados responsáveis e atenção constante.</p>
+    </div>
+
+    <div class="magic-card">
+      <h3>🤝 Respect</h3>
+      <p>Respeito a individualidade, o tempo e as necessidades de cada criança.</p>
+    </div>
+
+    <div class="magic-card">
+      <h3>🌸 Patience</h3>
+      <p>Compreensão e calma para lidar com cada momento do dia.</p>
+    </div>
+
+    <div class="magic-card">
+      <h3>🗣️ Communication</h3>
+      <p>Transparência com os pais e escuta ativa com as crianças.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SEÇÃO: História da sua marca -->
+<section id="brand-story" class="magic-section">
+  <h2 class="magic-title">🎀 Brand Story</h2>
+
+  <div class="story-box">
+    <h3>✨ Como tudo começou</h3>
+    <p>Sempre tive uma conexão especial com crianças. Desde cedo, cuidar, ensinar e acompanhar o desenvolvimento delas se tornou algo natural para mim.</p>
+
+    <h3>💖 Por que decidi ser babá</h3>
+    <p>Escolhi essa profissão porque acredito no poder do carinho, da segurança e da presença afetiva na infância. Ser babá é mais do que um trabalho — é uma missão.</p>
+
+    <h3>🌟 Minha trajetória</h3>
+    <p>Ao longo do tempo, fui aprimorando minhas habilidades, estudando, aprendendo com cada família e construindo uma forma única de cuidar: com amor, responsabilidade e respeito.</p>
+
+    <p class="story-end">This is the essence of my brand — and it's a pleasure to share it with you.</p>
+  </div>
+</section>
+<br>
+<section id="slogan" class="slogan-section">
+  <h2 class="slogan-title">🎀 Slogan</h2>
+  <p class="slogan-subtitle">Caring with affection and trust  
+Your little one is in good hands</p>
+
+  <div class="slogan-list">
+    <p class="slogan-item">Caring with affection and trust.</p>
+    <p class="slogan-item">Your little one is in good hands.</p>
+    <p class="slogan-item">Affection, safety, and fun.</p>
+  </div>
+</section>
+<br>
+
+      <!-- SEÇÃO: Regiões e Serviços Especiais -->
+      <div class="regions-section">
+        <section id="rss">
+        <h2 class="regions-title">🗺️ Where I Care for Your Little Ones</h2>
+        <p class="regions-subtitle">
+          Safe, reliable service with lots of care. </p>
+
+        <div class="regions-list">
+          <div class="region-card">
+            <span class="icon">🌙</span>
+            <h3>Nighttime Babysitting</h3>
+            <p>Available for nighttime care, ensuring a safe and calming environment while you rest or spend time away.</p>
+          </div>
+
+          <div class="region-card">
+            <span class="icon">🧸</span>
+            <h3>Baby and Child Care</h3>
+            <p>
+              Experiência com bebês, crianças pequenas e maiores, com atenção,
+              paciência e atividades adequadas.
+            </p>
+          </div>
+
+          <div class="region-card">
+            <span class="icon">⭐</span>
+            <h3>Acompanhamento em Atividades</h3>
+            <p>
+              Levo e busco em parque, escola, cursos, brincadeiras e atividades
+              externas.
+            </p>
+          </div>
+
+          <div class="region-card">
+            <span class="icon">📍</span>
+            <h3>Service Areas</h3>
+            <p>
+              Atendo em Oslo e regiões próximas, com flexibilidade para
+              deslocamento.
+            </p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <br />
+<!-- Seção: Dicas para os Pais -->
+<section id="tips-parents" class="tips-section">
+  <h2 class="tips-title">💡Tips for Parents</h2>
+
+  <div class="tips-container">
+
+    <div class="tip-box">
+      <h3>🏡 How to Prepare the Home</h3>
+      <ul>
+        <li>Keep the environment safe and well‑organized.</li>
+        <li>Remove any hazardous objects from the child’s reach.</li>
+        <li>Prepare a comfortable and secure space for play.</li>
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <h3>🎒 What to Set Aside</h3>
+      <ul>
+        <li>Fraldas, lenços e pomada</li>
+        <li>A set of extra clothes</li>
+        <li>Alimentos e mamadeiras</li>
+        <li>Remédios autorizados (se necessário)</li>
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <h3>💞 How to Make the Adjustment Easier</h3>
+      <ul>
+        <li>Explain the child’s routine</li>
+        <li>Show where the essential items are kept</li>
+        <li>Keep a comfort object nearby</li>
+        <li>Say goodbye with warmth and reassurance</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<br>
+      <!-- SEÇÃO: Ajuda com Rotina -->
+<div class="routine-section">
+  <section id="help">
+    <h2 class="routine-title">🧩 Help with Routine</h2>
+    <p class="routine-subtitle">Loving Support in the Child's Daily Activities</p>
+
+    <div class="routine-list">
+
+        <div class="routine-card">
+            <span class="routine-icon">🛁</span>
+            <h3>Banho</h3>
+            <p>Auxílio no banho com segurança, cuidado e atenção, sempre respeitando o conforto da criança.</p>
+        </div>
+
+        <div class="routine-card">
+            <span class="routine-icon">🍼</span>
+            <h3>Alimentação</h3>
+            <p>Ajuda com mamadeiras, refeições simples, lanches e incentivo a hábitos saudáveis.</p>
+        </div>
+
+        <div class="routine-card">
+            <span class="routine-icon">🌙</span>
+            <h3>Rotina do Sono</h3>
+            <p>Criação de um ambiente calmo, leitura, música suave e acompanhamento até adormecer.</p>
+        </div>
+    </div>
+</div>
+</section>
+<br>
+
+<!-- SEÇÃO FAQ -->
+      <div class="faq-section">
+        <section id="questions">
+        <h2 class="faq-title">🧩 Frequently Asked Questions</h2>
+        <p class="faq-subtitle">
+          Here are some quick answers to common questions.
+        </p>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>💳 How does payment work?</span>
+          </div>
+          <div class="faq-answer">
+            Payments are made exclusively through Vipps.
+For monthly packages, payment is completed at the beginning of the month.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>📅 How far in advance should I book?</span>
+          </div>
+          <div class="faq-answer">
+            For regular daytime appointments, booking in advance is recommended.
+For special nighttime appointments, please contact me directly with the date and time.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>🛑 Do you offer last‑minute bookings?</span>
+          </div>
+          <div class="faq-answer">
+            Last‑minute bookings may be available depending on my schedule. Please contact me to check availability. </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>⭐ Cancellations and rescheduling</span>
+          </div>
+          <div class="faq-answer">
+            Cancellations must be made at least 24 hours in advance. Rescheduling can be done at no additional cost.
+          </div>
+        </div>
+      </div>
+      <p class="note">
+    Note: For any additional questions, feel free to contact me and I will be happy to assist you.
+  </p>
+</div>
+      </section>
+              <br>
+<div class="included-box-wrapper">
+
+  <section id="included-excluded" class="include-section cloud-decor">
+    <div class="cloud cloud-top-left"></div>
+    <div class="cloud cloud-top-right"></div>
+    <div class="cloud cloud-bottom-left"></div>
+    <div class="cloud cloud-bottom-right"></div>
+
+    <h2 class="section-title fade-in">What is Included and What is Not Included</h2>
+
+    <div class="include-container fade-in">
+
+      <!-- Incluso -->
+      <div class="include-box">
+        <h3 class="include-title">✔ What is Included</h3>
+        <ul>
+          <li>Childcare and supervision</li>
+          <li>Troca de fraldas</li>
+          <li>Preparação de mamadeiras</li>
+          <li>Ajuda com refeições simples</li>
+          <li>Rotina do sono</li>
+          <li>Acompanhamento em atividades externas</li>
+          <li>Brincadeiras educativas</li>
+          <li>Monitoramento enquanto dorme</li>
+          <li>Organização leve do espaço</li>
+          <li>Relatório rápido do período</li>
+        </ul>
+      </div>
+
+      <!-- Não incluso -->
+      <div class="include-box not-included">
+        <h3 class="include-title">✖ What is Not Included</h3>
+        <ul>
+          <li>Limpeza pesada</li>
+          <li>Refeições complexas</li>
+          <li>Lavar roupas da casa inteira</li>
+          <li>Cuidar de animais</li>
+          <li>Driving the family car</li>
+          <li>Administrar medicamentos sem autorização</li>
+          <li>Risky activities</li>
+          <li>Horas extras sem aviso prévio</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+<br>
+      <div class="service-schedule-box">
+
+  <!-- TÍTULO -->
+  <h2 class="box-title" data-i18n="services_title">What I Offer</h2>
+
+  <!-- ÍCONES -->
+  <div class="icons">
+    <div class="icon-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="">
+      <p data-i18n="icon_safe">Safe Care</p>
+    </div>
+
+    <div class="icon-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920256.png" alt="">
+      <p data-i18n="icon_feeding">Feeding Help</p>
+    </div>
+
+    <div class="icon-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920232.png" alt="">
+      <p data-i18n="icon_play">Playtime</p>
+    </div>
+  </div>
+
+  <!-- TABELA -->
+  <table class="service-table">
+    <tr>
+      <th data-i18n="table_service">Service</th>
+      <th data-i18n="table_description">Description</th>
+    </tr>
+
+    <tr>
+      <td>Baby Monitoring</td>
+      <td data-i18n="service_monitor">Watching the baby while sleeping or playing safely.</td>
+    </tr>
+
+    <tr>
+      <td>Light Cleaning</td>
+      <td data-i18n="service_clean">Keeping the baby’s area tidy and organized.</td>
+    </tr>
+
+    <tr>
+      <td>Feeding Assistance</td>
+      <td data-i18n="service_feed">Helping with bottles or simple meals if needed.</td>
+    </tr>
+
+    <tr>
+      <td>Playtime</td>
+      <td data-i18n="service_play">Interactive and safe activities for stimulation.</td>
+    </tr>
+  </table>
+
+  <!-- BOTÃO APPLE CALENDAR -->
+  <button class="btn" onclick="saveAppleCalendar()">
+  Save to Apple Calendar
+</button>
+
+  <!-- AGENDAMENTO -->
+  <section id="schedule" class="schedule">
+    <h2 data-i18n="schedule_title">Schedule an Appointment</h2>
+    <p data-i18n="schedule_text">
+      Choose a date and time and send me a message. I will confirm as soon as possible.
+    </p>
+
+    <form onsubmit="return sendSchedule();">
+
+      <label data-i18n="schedule_name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label data-i18n="schedule_email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label data-i18n="schedule_date">Date:</label>
+      <input type="date" id="date" required>
+
+      <!-- TIME RANGE -->
+      <div class="time-range">
+
+        <label>Start Time:</label>
+        <div class="time-wrapper">
+          <select id="startTime" required>
+            <option value="">Select</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+          </select>
+        </div>
+
+        <label>End Time:</label>
+        <div class="time-wrapper">
+          <select id="endTime" required>
+            <option value="">Select</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:30">17:30</option>
+          </select>
+        </div>
+
+      </div>
+
+      <label data-i18n="schedule_message">Message:</label>
+      <textarea id="message" rows="4"></textarea>
+
+      <button class="btn" type="submit" data-i18n="schedule_button">Send Request</button>
+<a href="emailjs"></a>
+    </form>
+  </section>
+
+</div>
+      <div id="confirmBox" class="confirm-box">
+        Appointment sent successfully!
+      </div>
+      
+  <div class="contact-service-box">
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <h2 class="contact-title">📞 Contact</h2>
+    <p class="contact-subtitle">Feel free to reach out anytime</p>
+
+    <div class="contact-container">
+
+      <div class="contact-box">
+        <h3>📱 WhatsApp</h3>
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="contact-link">
+          Click to chat on WhatsApp
+        </a>
+      </div>
+
+      <div class="contact-box">
+        <h3>📧 Email</h3>
+        <a href="mailto:msiilvah46@gmail.com" class="contact-link">
+          msiilvah46@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-box">
+        <h3>📍 Location</h3>
+        <p class="contact-text">Your city or service area</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>🕒 Availability</h3>
+        <p class="contact-text">Monday to Thursday — 8am to 6pm</p>
+        <p class="contact-text">No weekend availability</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NIGHT SERVICE BOX -->
+  <div class="night-service-box">
+    <h3>🌙 Special Night-Time Service</h3>
+
+    <p>
+      This service is perfect for parents who are going out for a dinner, a party, 
+      or an evening event and need someone to stay at their home while the baby sleeps.
+    </p>
+
+    <p class="time-info">
+      Night-time hours: <strong>18:00</strong> to <strong>21:30</strong>
+    </p>
+
+    <p class="note">
+      Note: You only need to contact me if you want a special nighttime appointment, 
+      including the date and time. There is no need to use the Schedule an Appointment option.
+    </p>
+  </div>
+
+</div>
+    <footer>© 2026 - MilaCare</footer>
+
+    <script src="script.js"></script>
+<button id="backToTop" class="back-to-top">↑</button>
+<script>
+  const backToTop = document.getElementById("backToTop");
+
+  // Mostrar o botão quando descer 200px
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.style.display = "flex";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+
+  // Rolar suavemente até o topo
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+</script>
+  </body>
+</html>
