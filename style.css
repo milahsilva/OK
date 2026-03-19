@@ -20,7 +20,11 @@ body.dark {
   --texto: #f5f5f5;
   --card-bg: #1f1f1f;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso garante que bordas e paddings não aumentem o tamanho total do elemento */
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
